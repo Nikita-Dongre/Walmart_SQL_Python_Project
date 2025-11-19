@@ -1,4 +1,4 @@
-# Walmart Data Analysis — End-to-End SQL + Python + Tableau Project
+# Walmart Data Analysis — End-to-End Python + SQL + Tableau Project
 
 A complete data analytics project that takes Walmart retail sales data from raw dataset → cleaning → PostgreSQL analysis → Tableau dashboard.
 
