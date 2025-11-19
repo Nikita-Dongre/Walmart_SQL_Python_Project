@@ -108,6 +108,7 @@ Includes a professional Tableau dashboard built using cleaned data.
 |-- requirements.txt          # List of required Python libraries
 |-- main.py                   # Main script for loading, cleaning, and processing data
 
+
 ## Results and Insights
 This section will include your analysis findings:
 - Sales Insights: Key categories, branches with highest sales, and preferred payment methods.
