@@ -1,6 +1,6 @@
 # Walmart Data Analysis — End-to-End Python + SQL + Tableau Project
 
-A complete data analytics project that takes Walmart retail sales data from raw dataset → cleaning → PostgreSQL analysis → Tableau dashboard.
+A complete data analytics project that takes Walmart Sales data from Kaggle API → cleaning → PostgreSQL analysis → Tableau dashboard.
 
 ## Project Overview
 
@@ -11,12 +11,10 @@ This project uses:
 - VS Code for development workflow
 - Tableau for dashboard visualization
 
-Ideal for beginner to intermediate data analysts.
-
 ## Project Pipeline
 
 ### 1. Environment Setup
-- Tools: Python, PostgreSQL (pgAdmin4), VS Code
+- Tools: Python, PostgreSQL (pgAdmin4), VS Code, tableau
 - Create a clean folder structure
 - Set up the workspace
 
@@ -98,8 +96,15 @@ Includes a professional Tableau dashboard built using cleaned data.
 - Seasonal & time-based sales trends
 
 ## Getting Started
-git clone <repo_link>
-pip install -r requirements.txt
+
+### Clone the repository
+- git clone https://github.com/Nikita-Dongre/Walmart_SQL_Python_Project.git
+
+### Move into the project directory
+- cd Walmart_SQL_Python_Project
+
+### Install required Python packages
+- pip install -r requirements.txt
 
 Steps:
 - Set up Kaggle API
@@ -116,7 +121,6 @@ Steps:
 
 ## Acknowledgments
 - Kaggle — Walmart Sales Dataset
-- Walmart analytics case studies
 
 
 
