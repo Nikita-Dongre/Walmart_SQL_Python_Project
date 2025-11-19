@@ -1,213 +1,122 @@
 # Walmart Data Analysis — End-to-End SQL + Python + Tableau Project
 
-A complete data analytics project that takes Walmart retail sales data from raw dataset → cleaning → PostgreSQL analysis → Tableau dashboard, demonstrating strong practical skills in Python, SQL, ETL pipelines, and Business Intelligence.
+A complete data analytics project that takes Walmart retail sales data from raw dataset → cleaning → PostgreSQL analysis → Tableau dashboard.
 
-⭐ Project Overview
+## Project Overview
 
-This end-to-end project extracts meaningful insights from Walmart sales data using:
+This project uses:
+- Python for data cleaning, preprocessing, transformation
+- PostgreSQL (pgAdmin4) for SQL analysis
+- Kaggle API for dataset download
+- VS Code for development workflow
+- Tableau for dashboard visualization
 
-Python → data loading, preprocessing, cleaning, transformation
+Ideal for beginner to intermediate data analysts.
 
-PostgreSQL (pgAdmin4) → advanced SQL business analysis
+## Project Pipeline
 
-Kaggle API → automated dataset download
+### 1. Environment Setup
+- Tools: Python, PostgreSQL (pgAdmin4), VS Code
+- Create a clean folder structure
+- Set up the workspace
 
-VS Code → full development workflow
-
-Tableau Dashboard → interactive retail performance visualization
-
-This project is ideal for beginner → intermediate data analysts looking to develop real-world analytics and BI skills.
-
-🛠️ Project Pipeline
-1. Environment Setup
-
-Tools Used:
-
-Python (latest version)
-
-PostgreSQL via pgAdmin4
-
-VS Code
-
-Goals:
-
-Create a clean folder structure
-
-Set up virtual environment
-
-Maintain organized scripts, SQL files, notebooks
-
-2. Kaggle API Setup
-
-Download kaggle.json from Kaggle → Account → API
-
-Place it in your local ~/.kaggle/ directory
-
-Download dataset using the command:
-
+### 2. Kaggle API Setup
+- Download `kaggle.json` from Kaggle → Account → API
+- Place it inside `.kaggle/`
+- Use command:
 kaggle datasets download -d <dataset-name>
 
-3. Download Walmart Sales Data
+### 3. Download Walmart Sales Data
+- Source: Walmart Sales Dataset (Kaggle)
+- Store raw dataset inside `data/`
 
-Source: Walmart Sales Dataset from Kaggle
+### 4. Install Required Libraries
 
-Store all raw files inside the data/ directory.
-
-4. Install Required Libraries
+- Place it inside `.kaggle/`
+- Use command:
 pip install pandas numpy sqlalchemy psycopg2
 
-5. Load Data with Python
+### 5. Load Data with Python
+- Use Pandas to explore data:
+  - df.info()
+  - df.describe()
+  - df.head()
 
-Use Pandas to perform initial data checks:
+### 6. Data Cleaning
+- Remove duplicates
+- Fix missing values
+- Convert date/time
+- Clean currency symbols
+- Standardize data types
+- Validate outputs
 
-df.info()
+### 7. Feature Engineering
+- Create `total_amount = unit_price * quantity`
+- Add useful time fields
 
-df.describe()
+### 8. Load Data into PostgreSQL
+- Use sqlalchemy + psycopg2
+- Create tables
+- Insert cleaned data
+- Validate with SELECT queries in pgAdmin
 
-df.head()
+### 9. SQL Business Analysis
+- Revenue trends by branch and category
+- Best-selling products
+- City-wise performance
+- Customer behavior and payment analysis
+- Profit margin analysis
+- Peak time and seasonal analysis
 
-This helps identify types, nulls, and inconsistencies.
+All SQL files stored in `sql_queries/`.
 
-6. Data Cleaning
+## Tableau Dashboard Integration
 
-Key cleaning steps:
+Includes a professional Tableau dashboard built using cleaned data.
 
-Remove duplicates
+### Dashboard Features
+- Revenue trends
+- City-wise sales comparison
+- Quantity vs. total amount
+- Profit margin distribution
+- Customer ratings
+- Payment method breakdown
+- Time-based analysis
 
-Handle missing values
+## Project Structure
+|-- data/
+|-- sql_queries/
+|-- notebooks/
+|-- main.py
+|-- requirements.txt
+|-- README.md
 
-Convert and format date/time
+## Key Insights
+- Top-performing branches, cities, categories
+- Most profitable items
+- Customer preference patterns
+- Seasonal & time-based sales trends
 
-Clean currency fields
-
-Fix inconsistent data types
-
-Validate cleaned outputs
-
-7. Feature Engineering
-
-Created useful computed fields, including:
-
-total_amount = unit_price * quantity
-
-(Optional) time-based fields like day, month, year, hour
-
-These features simplify SQL aggregations later.
-
-8. Load Cleaned Data into PostgreSQL
-
-Process:
-
-Connect using psycopg2 + sqlalchemy
-
-Create tables from Python
-
-Insert cleaned data into PostgreSQL
-
-Validate with sample SELECT queries in pgAdmin4
-
-All final analysis is performed in PostgreSQL.
-
-9. SQL Analysis & Business Problem Solving
-
-SQL queries answer real Walmart business scenarios:
-
-Revenue trends by branch, category, or city
-
-Best-selling product categories
-
-Customer behavior by time and location
-
-Payment method distribution
-
-Profit margin comparison
-
-Peak sales hours and weekday patterns
-
-All SQL scripts are organized in the sql_queries/ folder.
-
-📊 Interactive Tableau Dashboard Integration
-
-This project includes a professional Tableau dashboard built using the cleaned PostgreSQL/Python dataset.
-
-Dashboard Highlights
-
-Revenue trends by branch & category
-
-City-wise performance comparison
-
-Quantity vs. total amount visuals
-
-Profit margin distribution
-
-Customer rating analysis
-
-Payment method breakdown
-
-Time-series analysis (hour, day, month)
-
-Purpose of the Dashboard
-
-The dashboard transforms raw SQL insights into interactive BI visuals, making the project fully end-to-end:
-
-API → Python → Cleaning → PostgreSQL → SQL → Tableau
-
-📁 Project Structure
-|-- data/               # Raw & cleaned datasets  
-|-- sql_queries/        # PostgreSQL SQL scripts  
-|-- notebooks/          # Jupyter EDA & analysis  
-|-- main.py             # ETL: cleaning + load to PostgreSQL  
-|-- requirements.txt    # Dependencies  
-|-- README.md           # Project documentation  
-
-🔍 Results & Key Insights
-
-Top-performing cities, branches, and product categories
-
-Most profitable items and store locations
-
-Customer behavior patterns (ratings, payment methods, etc.)
-
-Seasonal and hourly sales trends
-
-Product demand and revenue forecasting opportunities
-
-🚀 How to Get Started
-
-Clone the repository:
-
+## Getting Started
 git clone <repo_link>
-
-
-Install dependencies:
-
 pip install -r requirements.txt
 
+Steps:
+- Set up Kaggle API
+- Download dataset
+- Run `main.py`
+- Execute PostgreSQL queries
+- Open Tableau dashboard
 
-Steps to run:
+## Future Enhancements
+- Automated ETL
+- Forecasting models
+- Real-time dashboards
+- Additional datasets
 
-Set up Kaggle API
+## Acknowledgments
+- Kaggle — Walmart Sales Dataset
+- Walmart analytics case studies
 
-Download dataset
 
-Run main.py to clean + load data
 
-Execute SQL scripts in PostgreSQL
-
-Explore insights in Tableau
-
-🔮 Future Enhancements
-
-Automated ETL pipeline
-
-Adding machine learning demand forecasting
-
-More advanced Tableau dashboards
-
-Real-time analytics pipeline using Airflow + PostgreSQL
-
-🙌 Acknowledgments
-
-Kaggle — Walmart Sales Dataset
-
-Walmart retail analytics case studies
