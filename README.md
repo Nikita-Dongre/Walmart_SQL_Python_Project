@@ -65,13 +65,12 @@ pip install pandas numpy sqlalchemy psycopg2
 - Peak time and seasonal analysis
 
 ### 10. Project Publishing and Documentation
-- Documentation: Maintain well-structured documentation of the entire process in Markdown or a Jupyter Notebook.
+- Documentation: Maintain well-structured documentation .
 - Project Publishing:
   - All SQL files stored in `sql_queries/`.
 
 ## Tableau Dashboard Integration
-
-Includes a professional Tableau dashboard built using cleaned data.
+- Includes a professional Tableau dashboard built using cleaned data.
 
 ### Dashboard Features
 - Revenue trends
