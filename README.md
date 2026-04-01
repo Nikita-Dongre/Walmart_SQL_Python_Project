@@ -121,18 +121,6 @@ This project simulates a real-world retail analytics workflow at Walmart. It cov
 
 ## 📈 Executive Dashboard
 
-The Tableau dashboard (`SQL_queries_Dashboard.twb`) provides interactive visualizations including:
-
-| Panel | What It Shows |
-|---|---|
-| 🔵 Revenue Trends | Monthly and yearly revenue patterns |
-| 🏙 City Performance | Sales comparison across Texas cities |
-| 📦 Category Analysis | Revenue and quantity by product category |
-| 💰 Profit Distribution | Profit margins across branches |
-| ⭐ Customer Ratings | Rating distributions and averages |
-| 💳 Payment Breakdown | Transaction split by payment method |
-| ⏰ Time Analysis | Peak hours and seasonal patterns |
-
 > **Note:** Open the `.twb` file in Tableau Desktop to interact with the dashboard. Connect it to the cleaned dataset (`walmart_clean_data.csv`).
 
 ---
