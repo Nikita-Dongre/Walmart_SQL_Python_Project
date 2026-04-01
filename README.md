@@ -37,6 +37,14 @@ This project simulates a real-world retail analytics workflow at Walmart. It cov
 
 ---
 
+## :bar_chart: Sales Analysis Dashboard
+
+<p align="center">
+  <img src="Sales_Analysis_dashboard.png" alt="Walmart Sales Dashboard" width="100%"/>
+</p>
+
+---
+
 ## 🛠 Tech Stack
 
 | Layer | Tool |
